@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SparkTech AI Solutions</title>
+
+    <meta
+        name="description"
+        content="SparkTech AI Solutions develops digital products, AI-powered tools, technology platforms and the future JarvyX ecosystem."
+    >
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #07111f;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(7, 17, 31, 0.95);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #61dafb;
+        }
+
+        nav a {
+            color: #d8e5f3;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #61dafb;
+        }
+
+        .hero {
+            min-height: 82vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+            background:
+                radial-gradient(circle at top, #173b67 0%, #07111f 55%);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 76px);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #61dafb;
+        }
+
+        .hero p {
+            color: #b9c8d8;
+            font-size: 19px;
+            max-width: 720px;
+            margin: 0 auto 34px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #61dafb;
+            color: #06101c;
+            text-decoration: none;
+            padding: 14px 26px;
+            border-radius: 8px;
+            font-weight: 700;
+            margin: 6px;
+        }
+
+        .btn.secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 1px solid #61dafb;
+        }
+
+        section {
+            padding: 85px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            color: #9fb0c3;
+        }
+
+        .grid {
+            max-width: 1150px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: #0d1b2d;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 14px;
+            padding: 28px;
+        }
+
+        .card h3 {
+            color: #61dafb;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #aebdcd;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            color: #b9c8d8;
+        }
+
+        .notice {
+            max-width: 900px;
+            margin: 40px auto 0;
+            background: #0d1b2d;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.08);
+            color: #aebdcd;
+        }
+
+        footer {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding: 35px 8%;
+            text-align: center;
+            color: #7f91a5;
+        }
+
+        @media (max-width: 760px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                min-height: 70vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">SparkTech AI Solutions</div>
+
+    <div>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#jarvyx">JarvyX</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+
+<header class="hero">
+    <div class="hero-content">
+
+        <h1>
+            Building the Future with
+            <span>AI & Digital Technology</span>
+        </h1>
+
+        <p>
+            SparkTech AI Solutions is building an ecosystem of digital products,
+            AI-powered resources and technology platforms designed for creators,
+            entrepreneurs and growing businesses.
+        </p>
+
+        <a href="#products" class="btn">
+            Explore Our Products
+        </a>
+
+        <a href="#about" class="btn secondary">
+            Learn More
+        </a>
+
+    </div>
+</header>
+
+
+<section id="about">
+
+    <div class="section-title">
+        <h2>About SparkTech</h2>
+        <p>Technology designed to create practical value.</p>
+    </div>
+
+    <div class="about">
+        <p>
+            SparkTech AI Solutions is an independent digital technology brand
+            focused on creating useful digital products, AI-assisted business
+            resources and innovative technology platforms.
+        </p>
+
+        <br>
+
+        <p>
+            Our goal is to build accessible tools and digital solutions that help
+            individuals, creators and small businesses improve productivity,
+            marketing and digital growth.
+        </p>
+    </div>
+
+</section>
+
+
+<section id="products">
+
+    <div class="section-title">
+        <h2>Our Ecosystem</h2>
+        <p>One platform. Multiple digital solutions.</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Digital Products</h3>
+
+            <p>
+                Practical AI-assisted digital resources including social media
+                growth kits, editable templates, content systems, educational
+                resources and productivity tools.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <h3>Project-C / JarvyX</h3>
+
+            <p>
+                An evolving technology platform focused on rewards,
+                community participation, digital engagement and future
+                ecosystem services.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <h3>AI Solutions</h3>
+
+            <p>
+                Future tools and services designed to help small businesses
+                and creators use artificial intelligence more effectively
+                in their everyday operations.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <h3>Future Innovation</h3>
+
+            <p>
+                SparkTech will continue developing new digital services,
+                technology products and ecosystem integrations as the
+                platform grows.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="jarvyx">
+
+    <div class="section-title">
+        <h2>JarvyX Ecosystem</h2>
+        <p>A developing digital utility ecosystem.</p>
+    </div>
+
+    <div class="about">
+
+        <p>
+            JarvyX is being developed as part of the SparkTech ecosystem.
+            The project is intended to connect community features,
+            digital rewards, products and future technology services.
+        </p>
+
+        <br>
+
+        <p>
+            Future plans may include digital utility features that allow
+            eligible ecosystem assets to be used with selected SparkTech
+            products and services.
+        </p>
+
+    </div>
+
+    <div class="notice">
+        <strong>Important:</strong>
+        JarvyX-related blockchain and token features are under development.
+        Nothing on this website should be interpreted as an investment
+        recommendation, financial advice or a guarantee of future value.
+    </div>
+
+</section>
+
+
+<section id="contact">
+
+    <div class="section-title">
+        <h2>Contact</h2>
+
+        <p>
+            Business enquiries, product support and partnership enquiries.
+        </p>
+    </div>
+
+    <div class="about">
+
+        <p>
+            Official contact information and customer support channels
+            will be published here as the SparkTech platform expands.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="section-title">
+        <h2>Policies</h2>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Digital Delivery</h3>
+
+            <p>
+                Digital products are delivered electronically after a
+                successful purchase through the applicable sales platform.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <h3>Refunds</h3>
+
+            <p>
+                Refund eligibility may depend on the nature of the digital
+                product and the terms displayed during checkout.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <h3>Privacy</h3>
+
+            <p>
+                Customer information is used only for legitimate business,
+                delivery, support and transaction-related purposes.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 SparkTech AI Solutions. All rights reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
