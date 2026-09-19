@@ -59,6 +59,8 @@
         }
 
         .hero {
+            position: relative;
+            overflow: hidden;
             min-height: 82vh;
             display: flex;
             align-items: center;
@@ -66,12 +68,91 @@
             text-align: center;
             padding: 80px 20px;
             background:
-                radial-gradient(circle at top, #173b67 0%, #07111f 55%);
+                radial-gradient(circle at 50% 22%, rgba(106, 215, 255, 0.14) 0%, rgba(106, 215, 255, 0.04) 18%, rgba(7, 17, 31, 0) 34%),
+                radial-gradient(circle at center, #173b67 0%, #07111f 60%);
         }
 
         .hero-content {
+            position: relative;
+            z-index: 3;
             max-width: 850px;
         }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            opacity: 0.32;
+            background-image:
+                linear-gradient(rgba(97, 218, 251, 0.10) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(97, 218, 251, 0.10) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 360px;
+            height: 360px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -47%);
+            border-radius: 50%;
+            z-index: 2;
+            border: 2px solid rgba(106, 215, 255, 0.35);
+            box-shadow:
+                0 0 0 14px rgba(106, 215, 255, 0.08),
+                0 0 0 28px rgba(106, 215, 255, 0.05),
+                0 0 0 42px rgba(106, 215, 255, 0.03),
+                0 0 30px rgba(106, 215, 255, 0.22);
+        }
+
+        .hero-net {
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .hero-net span {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: rgba(106, 215, 255, 0.9);
+            box-shadow: 0 0 12px rgba(106, 215, 255, 0.6);
+        }
+
+        .hero-net span:nth-child(1) { top: 18%; left: 16%; }
+        .hero-net span:nth-child(2) { top: 30%; left: 28%; }
+        .hero-net span:nth-child(3) { top: 20%; right: 18%; }
+        .hero-net span:nth-child(4) { top: 42%; right: 28%; }
+        .hero-net span:nth-child(5) { bottom: 24%; left: 20%; }
+        .hero-net span:nth-child(6) { bottom: 18%; right: 22%; }
+
+        .hero-lines {
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .hero-lines::before,
+        .hero-lines::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            opacity: 0.22;
+        }
+
+        .hero-lines::before {
+            background:
+                linear-gradient(28deg, transparent 49%, rgba(106, 215, 255, 0.55) 50%, transparent 51%) no-repeat,
+                linear-gradient(145deg, transparent 49%, rgba(106, 215, 255, 0.35) 50%, transparent 51%) no-repeat,
+                linear-gradient(70deg, transparent 49%, rgba(106, 215, 255, 0.30) 50%, transparent 51%) no-repeat;
+            background-size: 50% 50%, 45% 45%, 40% 40%;
+            background-position: left 18% top 22%, right 16% top 22%, center bottom 20%;
+}
 
         .hero h1 {
             font-size: clamp(42px, 7vw, 76px);
@@ -204,8 +285,19 @@
 
 
 <header class="hero">
-    <div class="hero-content">
+    <div class="hero-net">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
+    <div class="hero-lines"></div>
+    
+    <div class="hero-content">
+        
         <h1>
             Building the Future with
             <span>AI & Digital Technology</span>
